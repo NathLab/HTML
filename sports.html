@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Jeux Olympiques</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+
+		<!-- Les trois lignes ci-dessous sont un correctif pour que la sémantique
+			  HTML5 fonctionne correctement avec les anciennes versions de
+			  Internet Explorer-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<script>
+	function colorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "blue";
+	}
+	function uncolorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "white";
+	}
+</script>
+		<header>
+		</header>
+		
+		<nav class="menu">
+			<ul class="link-menu">
+				<li><a href='./index.html' onmouseover="colorize(1)" onmouseout="uncolorize(1)" ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+				<li><a href="./index.html" onmouseover="colorize(2)" onmouseout="uncolorize(2)">Paris 2024</a></li>
+				<li><a href="./Athletes.html" onmouseover="colorize(3)" onmouseout="uncolorize(3)">Athlètes</a></li>
+				<li><a href="./sports.html" onmouseover="colorize(4)" onmouseout="uncolorize(4)">Sports</a></li>
+				<li><a href="./info.html" onmouseover="colorize(5)" onmouseout="uncolorize(5)">Info</a></li>
+
+
+			</ul>
+		</nav>
+		<nav class="survol">
+			<ul class="link-menu"><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li></ul>
+
+		</nav>
+
+		<h1 class="info">Liste des sports</h1>
+
+		<main>
+			<h2>28 sports olympiques</h2>
+			<p>Athlétisme, aviron, badminton, basketball, basketball 3×3, boxe, canoë , cyclisme sur piste, cyclisme sur route, BMX freestyle, BMX racing, VTT, escrime, football, golf, gymnastique artistique, gymnastique rythmique, trampoline, haltérophilie, handball, hockey, judo, lutte, pentathlon moderne, rugby, natation, natation artistique, natation marathon, plongeon, waterpolo, sports équestres, taekwondo, tennis, tennis de table, tir, tir à l’arc, triathlon, voile, volleyball, volleyball de plage.</p>
+			<br>
+			<img src='listeSportJO.jpg' alt='Liste des sports'></img></h2>
+
+		</main>
+		<footer>
+			<nav class="menu2">
+				<ul class="link-menu2">
+					<li><a class='afooter' href='./index.html'  ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+					<li><a class='afooter' href="./paris2024.html" >Paris 2024</a></li>
+					<li><a class='afooter' href="./Athletes.html" >Athlètes</a></li>
+					<li><a class='afooter' href="./sports.html">Sports</a></li>
+					<li><a class='afooter' href="./info.html">Info</a></li>
+				</ul>
+				<ul>
+					<li><a class='afooter' href='Athletes.html'>Combien de pays et d'athlètes participent aux Jeux Olympiques ?</a>
+					<li><a class='afooter' href='Athletes.html#sportifmedaille'>Quel sportif est le plus vieux médaillé des Jeux olympiques ?</a>
+					<li><a class='afooter' href='sports.html'>Liste des sports Olympiques</a>
+					<li><a class='afooter' href='info.html'>Me contacter</a>
+			</nav>
+			<p>Copyright Nathan Labro & Auxence Quetier &trade; 2022</p>		</footer>
+	</body>
+</html>

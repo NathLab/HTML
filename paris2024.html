@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Jeux Olympiques</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+
+		<!-- Les trois lignes ci-dessous sont un correctif pour que la sémantique
+			  HTML5 fonctionne correctement avec les anciennes versions de
+			  Internet Explorer-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<script>
+	function colorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "blue";
+	}
+	function uncolorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "white";
+	}
+</script>
+		<header>
+		</header>
+		
+		<nav class="menu">
+			<ul class="link-menu">
+				<li><a href='./index.html' onmouseover="colorize(1)" onmouseout="uncolorize(1)" ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+				<li><a href="./paris2024.html" onmouseover="colorize(2)" onmouseout="uncolorize(2)">Paris 2024</a></li>
+				<li><a href="./Athletes.html" onmouseover="colorize(3)" onmouseout="uncolorize(3)">Athlètes</a></li>
+				<li><a href="./sports.html" onmouseover="colorize(4)" onmouseout="uncolorize(4)">Sports</a></li>
+				<li><a href="./info.html" onmouseover="colorize(5)" onmouseout="uncolorize(5)">Info</a></li>
+
+
+			</ul>
+		</nav>
+		<nav class="survol">
+			<ul class="link-menu"><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li></ul>
+
+		</nav>
+
+<h1>Paris 2024</h1>
+			<h2>La Billeterie des jeux est ouverte</h2>
+			<p>Venez vite vous inscrire pour le grand tirage au sort ! 
+			<a href="https://tickets.paris2024.org/"> Je m'inscris </a>
+			</p>
+			<h2>La place de la Concorde et les Champs-Elysées pour la cérémonie d'ouverture</h2>
+			<p>Une cérémonie grandiose
+				sur la place de la Concorde,
+				au cœur de Paris, précédée
+				d’un défilé sur les mythiques
+				Champs-Elysées</p>
+			<p><img width='1000px' src='ceremonieouverture.jpg' alt="cérémonie d'ouverture"/></p>
+			<h2>PARIS 2024 Dévoile son Film et son Slogan</h2>
+				<video width="1000" controls>
+					<source src="https://presse.paris2024.org/download-file/62e2b08a6d89ca5a3a07a55d" type=video/mp4>
+				</video>			
+	</main>
+		<footer>
+			<nav class="menu2">
+				<ul class="link-menu2">
+					<li><a class='afooter' href='./index.html'  ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+					<li><a class='afooter' href="./paris2024.html" >Paris 2024</a></li>
+					<li><a class='afooter' href="./Athletes.html" >Athlètes</a></li>
+					<li><a class='afooter' href="./sports.html">Sports</a></li>
+					<li><a class='afooter' href="./info.html">Info</a></li>
+				</ul>
+				<ul>
+					<li><a class='afooter' href='Athletes.html'>Combien de pays et d'athlètes participent aux Jeux Olympiques ?</a>
+					<li><a class='afooter' href='Athletes.html#sportifmedaille'>Quel sportif est le plus vieux médaillé des Jeux olympiques ?</a>
+					<li><a class='afooter' href='sports.html'>Liste des sports Olympiques</a>
+					<li><a class='afooter' href='info.html'>Me contacter</a>
+			</nav>
+			<p>Copyright Nathan Labro & Auxence Quetier &trade; 2022</p>		</footer>
+	</body>
+</html>

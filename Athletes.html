@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Jeux Olympiques</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+
+		<!-- Les trois lignes ci-dessous sont un correctif pour que la sémantique
+			  HTML5 fonctionne correctement avec les anciennes versions de
+			  Internet Explorer-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<script>
+	function colorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "blue";
+	}
+	function uncolorize(n) {
+	  let colors = document.getElementsByClassName('color');
+	  colors[n-1].style.backgroundColor  = "white";
+	}
+</script>
+		<header>
+		</header>
+		
+		<nav class="menu">
+			<ul class="link-menu">
+				<li><a href='./index.html' onmouseover="colorize(1)" onmouseout="uncolorize(1)" ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+				<li><a href="./paris2024.html" onmouseover="colorize(2)" onmouseout="uncolorize(2)">Paris 2024</a></li>
+				<li><a href="./Athletes.html" onmouseover="colorize(3)" onmouseout="uncolorize(3)">Athlètes</a></li>
+				<li><a href="./sports.html" onmouseover="colorize(4)" onmouseout="uncolorize(4)">Sports</a></li>
+				<li><a href="./info.html" onmouseover="colorize(5)" onmouseout="uncolorize(5)">Info</a></li>
+
+
+			</ul>
+		</nav>
+		<nav class="survol">
+			<ul class="link-menu"><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li><li><div class='color' /></li></ul>
+
+		</nav>
+
+		<h1>Athètes</h1>
+
+		<main>
+			<h2>Combien de pays et d'athlètes participent aux Jeux Olympiques ?</h2>
+			<p>Aux Jeux Olympiques d'été de 2024 à Paris, il y aura près de 10 500 athlètes originaires de 206 CNO en lice. Aux Jeux Olympiques d'hiver, ce sont généralement quelque 2 900 athlètes représentant plus de 80 CNO qui prennent part aux compétitions.</p>
+			<br>
+			<h2>Qui est l'athlète le plus titré au monde ?</h2>
+			<p>Le nageur américain Michael Phelps, avec ses 28 médailles au total en 4 olympiades, est le sportif ayant récolté le plus de médailles. Il détient aussi le record de médailles d'or obtenues lors de Jeux olympiques avec 23 titres.</p>
+			<br>
+			<h2 id='sportifmedaille'>Quel sportif est le plus vieux médaillé des Jeux olympiques ?</h2>
+			<p>Aux jeux de 1912, <b>Oscar Swahn </b> décroche sur ses terres deux nouvelles médailles olympiques, l'or et le bronze, devenant à <b>64 ans</b> le plus vieux médaillé olympique de l'histoire. Huit ans plus tard, aux Jeux olympiques d'été de 1920 Oscar Swahn est l'athlète le plus âgé à participer à des compétitions olympiques.</p>
+			<br>
+			<h2>Quel Français a le plus de médaille olympique ?</h2>
+			<p>Le record de titres aux Jeux olympiques est détenu par le biathlète <b>Martin Fourcade</b> avec <b>cinq médailles d'or</b> aux Jeux d'hiver, tandis que le record de podiums est la propriété des escrimeurs <b>Philippe Cattiau et Roger Ducret</b>, dans les années 1920-1930 avec <b>huit médailles</b> chacun.</p>
+			<br>
+			<h2>Qui a été le premier champion olympique Français ?</h2>
+			<p>lors des Jeux d'Athènes, le premier titre olympique est à mettre à l'actif d'<b>Eugène-Henri Gravelotte</b> qui l'emporte en battant son compatriote Henri Callot en finale du fleuret.</p>
+			</p>
+			<br>
+			<h2>Athlètes les plus médaillés</h2>
+			<tbody>
+			<table width=1000px>
+				<thead>
+					<tr><th>Rang</th><th>Nom</th><th>Pays</th><th>Sport</th><th>or</th><th>argent</th><th>bronze</th><th>total</th></tr>
+				</thead>
+				<tbody>
+					<tr><th>1</th><td>Michael Phelps</td><td>États-Unis</td><td>Natation</td><td>23</td><td>3</td><td>2</td><td>28</td></tr>
+					<tr><th>2</th><td>Larissa Latynina</td><td>Union soviétique</td><td>Gymnastique artistique</td><td>9</td><td>5</td><td>4</td><td>18</td></tr>
+					<tr><th>3</th><td>Paavo Nurmi</td><td>Finlande</td><td>Athlétisme</td><td>9</td><td>3</td><td>0</td><td>12</td></tr>
+					<tr><th>4</th><td>Mark Spitz</td><td>États-Unis</td><td>Natation</td><td>9</td><td>1</td><td>1</td><td>11</td></tr>
+					<tr><th>5</th><td>Carl Lewis</td><td>États-Unis</td><td>Athlétisme</td><td>9</td><td>1</td><td>0</td><td>10</td></tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+
+	</main>
+		<footer>
+			<nav class="menu2">
+				<ul class="link-menu2">
+					<li><a class='afooter' href='./index.html'  ><img  src='logoJO.PNG' alt='logo' class='logo'></img></a></li>
+					<li><a class='afooter' href="./paris2024.html" >Paris 2024</a></li>
+					<li><a class='afooter' href="./Athletes.html" >Athlètes</a></li>
+					<li><a class='afooter' href="./sports.html">Sports</a></li>
+					<li><a class='afooter' href="./info.html">Info</a></li>
+				</ul>
+				<ul>
+					<li><a class='afooter' href='Athletes.html'>Combien de pays et d'athlètes participent aux Jeux Olympiques ?</a>
+					<li><a class='afooter' href='Athletes.html#sportifmedaille'>Quel sportif est le plus vieux médaillé des Jeux olympiques ?</a>
+					<li><a class='afooter' href='sports.html'>Liste des sports Olympiques</a>
+					<li><a class='afooter' href='info.html'>Me contacter</a>
+			</nav>
+			<p>Copyright Nathan Labro & Auxence Quetier &trade; 2022</p>		</footer>
+	</body>
+</html>
